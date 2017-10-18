@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="author" content="topnotch">
+        <meta name="generator" content="PhpED 6.0">
+        <meta name="revisit-after" content="15 days">
+        <title>Mike Fullman</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>           
+        <div class="col-md-7">
+            <a id="remove_map_filter" class="btn btn-primary">Remove Map Filter</a>
+            <div id="map"></div>
+            
+            <div id="date-chart" class="chart">
+                <div class="title">Date</div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="pie-chart-wrapper">
+                <div class="col-md-6">
+                    <svg class="pie-chart-1"></svg>
+                    <div class="pie-chart-tooltip"></div>
+                </div>
+                <div class="col-md-6">
+                    <svg class="pie-chart-2 pie-chart"></svg>
+                    <div class="pie-chart-tooltip"></div>
+                </div>
+            </div>
+            <div class="bar-chart-wrapper">
+                <div class="col-md-6">
+                    <svg class="bar-chart-1"></svg>
+                </div>
+                <div class="col-md-6">
+                    <svg class="bar-chart-2"></svg>
+                </div>
+            </div>
+        </div>
+        <!-- Replace the value of the key parameter with your own API key. -->
+        <script src="assets/js/crossfilter.v1.min.js"></script>
+        <script src="assets/js/d3.v3.min.js"></script>
+        <script src="assets/js/gradientPie.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0dwHLSZVsIFPVwJWuEchmp-eQEX55bqQ&libraries=drawing&callback=initMap" async defer></script>
+    </body>
+</html>
